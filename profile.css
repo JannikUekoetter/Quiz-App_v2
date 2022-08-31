@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(247, 247, 247);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: 150px 300px 200px 150px;
+  gap: 20px;
+  font-size: 30px;
+
+  grid-template-areas:
+    "header header header picture"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+h1 {
+  text-align: center;
+}
+
+.main {
+  padding: 16px;
+  background-color: rgb(127, 14, 240);
+  grid-area: main;
+}
+
+.myName {
+  padding: 16px;
+  background-color: rgb(115, 106, 123);
+  grid-area: header;
+}
+
+.profilePicture {
+  padding: 16px;
+  background-color: rgb(208, 77, 169);
+  text-align: center;
+}
+
+.footer {
+  padding: 16px;
+  background-color: rgb(115, 106, 123);
+  grid-area: footer;
+  text-align: center;
+}
