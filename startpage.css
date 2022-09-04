@@ -15,7 +15,7 @@ body {
   transition: 0.4s ease;
 }
 
-.question {
+h1 {
   padding: 14px 20px;
   border: none;
   border-radius: 14px;
@@ -23,14 +23,23 @@ body {
   font-size: 2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: rgb(87, 235, 28);
-  margin-top: 6em;
-  
+  margin-top: 3rem;
+  margin: 5em 10em 2em 10em
+  height: 1.5em;
+  width: 500px
+}
+
+h1 > p {
+
+  text-align: center;
+  font-size: 3rem;
 }
 
 .question__questiontext {
   font-size: 30px;
   text-align: left;
-  padding: 1rem;
+  padding: 2rem;
+  
   
 }
 
@@ -39,23 +48,24 @@ body {
   text-align: center;
   background: #1abc9c;
   color: white;
-  font-size: 30px;
+
   width: 100%;
 }
 .header__headertext {
   padding: 14px 20px;
-  border: none;
-  border-radius: 14px;
   font-weight: bold;
-  font-size: 24px;
-  box-shadow: rgba(44, 35, 35, 0.24) 0px 3px 8px;
+  font-size: 3rem;
+
 }
 
 .box {
-  width: 400px;
-  aspect-ratio: 1 / 1;
+  width: auto;
+  height: 35rem;
   background-color: gray;
-  border-radius: 10px;
+  border-radius: 2rem;
+  margin: 5em 10em 2em 10em
+
+
 }
 
 .button {
@@ -66,16 +76,25 @@ body {
   font-size: 24px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: rgb(28, 117, 235);
+  margin-bottom: 4rem
 }
 
-.footer {
+button > p {
+  font-size: 2rem;
+}
+
+footer {
   padding: 60px;
   text-align: center;
   background: #323232;
   color: white;
   font-size: 30px;
   width: 100%;
-  margin-top: auto;
+  margin-top: 0 auto;
   position: absolute;
   bottom: 0;
+}
+
+footer > p {
+  font-size: 2.2rem;
 }
