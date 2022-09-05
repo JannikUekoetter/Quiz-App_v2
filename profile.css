@@ -1,19 +1,17 @@
 * {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
-  background-color: gray;
+  background-color: lightgray;
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: 150px 300px 200px 150px 150px;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-template-rows: 150px 300px 200px 150px 150px;*/ /* comment here */
   gap: 20px;
   font-size: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
 
   grid-template-areas:
     "header header header picture"
@@ -37,10 +35,15 @@ h1 {
 }
 
 .main {
-  padding: 16px;
-  background-color: #1abc9c;
+  background-color: hsl(168, 76%, 42%);
   grid-area: main;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
+  height: auto%;
+  border-radius: 1rem;
+}
+
+.main > p {
+  padding: 1em;
 }
 
 .myName {
@@ -48,42 +51,80 @@ h1 {
   background-color: #1abc9c;
   grid-area: header;
   margin-bottom: 2em;
+  border-radius: 1rem;
 }
 
 .profilePicture {
   padding: 16px;
   background-color: rgb(28, 117, 235);
   text-align: center;
+  border-radius: 1rem;
 }
 
 .footer {
-  padding: 16px;
+  padding: 2em;
   background-color: rgb(115, 106, 123);
   grid-area: footer;
   text-align: center;
-  bottom: 0;
+  width: 100%;
 }
 
 .icon1 {
   background-color: rgb(28, 117, 235);
   text-align: center;
   margin-bottom: 3em;
+  height: 6rem;
+  border-radius: 1rem;
 }
 
 .icon2 {
   background-color: rgb(28, 117, 235);
   text-align: center;
   margin-bottom: 3em;
+  height: 6rem;
+  border-radius: 1rem;
 }
 
 .icon3 {
   background-color: rgb(28, 117, 235);
   text-align: center;
   margin-bottom: 3em;
+  height: 6rem;
+  border-radius: 1rem;
 }
 
 .icon4 {
   background-color: rgb(28, 117, 235);
   text-align: center;
   margin-bottom: 3em;
+  height: 6rem;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.footerclass {
+  background-color: gray;
+  margin-top: auto;
+  align-items: center;
+
+  grid-area: footer; /* remove footer width and replace with grid-area:footer*/
+  height: 10rem;
+  /*position: absolute;*/ /* comment here */
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .footerclass {
+    min-width: 600px;
+  }
+
+  .container {
+  }
 }

@@ -36,9 +36,10 @@ h1 > p {
 }
 
 .question__questiontext {
-  font-size: 30px;
-  text-align: left;
+  font-size: 3rem;
+  text-align: center;
   padding: 2rem;
+  margin-top: 8rem;
   
   
 }
@@ -63,9 +64,8 @@ h1 > p {
   height: 35rem;
   background-color: gray;
   border-radius: 2rem;
-  margin: 5em 10em 2em 10em
-
-
+  margin: 1em 10em 2em 10em;
+  overflow: auto;
 }
 
 .button {
