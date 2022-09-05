@@ -27,11 +27,11 @@ h1 {
   border: none;
   border-radius: 2rem;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 6rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: rgb(87, 235, 28);
-  margin-top: 3em;
-  margin-bottom: 4em;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .main {
@@ -40,6 +40,10 @@ h1 {
   margin-bottom: 3rem;
   height: auto%;
   border-radius: 1rem;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
 }
 
 .main > p {
@@ -52,6 +56,7 @@ h1 {
   grid-area: header;
   margin-bottom: 2em;
   border-radius: 1rem;
+  font-size: 3rem;
 }
 
 .profilePicture {
@@ -59,6 +64,7 @@ h1 {
   background-color: rgb(28, 117, 235);
   text-align: center;
   border-radius: 1rem;
+  font-size: 3rem;
 }
 
 .footer {
@@ -75,6 +81,7 @@ h1 {
   margin-bottom: 3em;
   height: 6rem;
   border-radius: 1rem;
+  font-size: 3rem;
 }
 
 .icon2 {
@@ -83,6 +90,7 @@ h1 {
   margin-bottom: 3em;
   height: 6rem;
   border-radius: 1rem;
+  font-size: 3rem;
 }
 
 .icon3 {
@@ -91,6 +99,7 @@ h1 {
   margin-bottom: 3em;
   height: 6rem;
   border-radius: 1rem;
+  font-size: 3rem;
 }
 
 .icon4 {
@@ -100,19 +109,19 @@ h1 {
   height: 6rem;
   justify-content: center;
   border-radius: 1rem;
+  font-size: 3rem;
 }
 
 .footerclass {
   background-color: gray;
   margin-top: auto;
   align-items: center;
-
-  grid-area: footer; /* remove footer width and replace with grid-area:footer*/
-  height: 10rem;
-  /*position: absolute;*/ /* comment here */
+  grid-area: footer;
+  height: 15rem;
   bottom: 0;
   position: fixed;
   width: 100%;
+  left: 0;
 }
 
 footer > p {
